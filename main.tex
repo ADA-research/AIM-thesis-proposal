@@ -1,0 +1,101 @@
+\documentclass[11pt, a4paper]{article}
+\usepackage{geometry}
+\geometry{a4paper, top=45mm, left=20mm, right=20mm, bottom=35mm, headheight=55pt}
+\usepackage{listings}
+\usepackage{multicol}
+\usepackage[style=numeric,sorting=none]{biblatex}
+\usepackage[acronym]{glossaries}
+\usepackage{footnote}
+\usepackage{footmisc}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage{tabto}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{datetime}
+\usepackage{enumitem}
+\usepackage{lipsum}
+
+\addbibresource{references.bib}
+
+\makeglossaries
+\input{acronyms}
+
+\RequirePackage{xcolor}[2007/01/21]
+\definecolor{rwth-blue}{cmyk}{1,.5,0,0}\colorlet{rwth-lblue}{rwth-blue!50}\colorlet{rwth-llblue}{rwth-blue!25}
+
+\renewcommand\familydefault{\sfdefault}
+
+\lhead{
+    Prof. Dr. Holger Hoos \\
+    Chair for AI Methodology \\
+    RWTH Aachen University \\
+}
+\rhead{
+	\raisebox{0.33\height}{
+		\includegraphics[width=8cm]{chair_logo.pdf}
+	}
+} 
+
+\renewcommand{\headrulewidth}{0.8pt}
+\renewcommand{\headrule}{{\color{rwth-llblue}\hrule height \headrulewidth}}
+
+\setlength\parindent{0pt}
+
+\begin{document}
+
+\pagestyle{fancy}
+
+% Put working title of thesis here:
+\section*{\textcolor{rwth-blue}{Project Proposal:} \\ \LARGE \textcolor{rwth-blue}{Preliminary
+		Thesis Title}}
+
+% Choose the kind of project here '\square' for empyt box, '\boxtimes' for ticked box
+\begin{minipage}[t]{0.5\textwidth}
+\textbf{Type:} \\
+Bachelor Thesis \tabto{3.75cm} $\square$ \\
+Master Thesis \tabto{3.75cm} $\boxtimes$ \\
+\end{minipage}
+% Put your contact details here
+\begin{minipage}[t]{0.5\textwidth}
+\textbf{Daily Supervisor:} \\
+Name \\
+eMail \\
+Theaterstrasse 35-39, 52062 Aachen, Room XXX
+\end{minipage}
+
+\vspace{0.5cm}
+
+% Outline the topic of your thesis here and describe the related 
+% literature that is important. If possible, already describe
+% planned experiments or implementations briefly. Feel free to 
+% add images.
+\section*{\textcolor{rwth-blue}{Overview and Related Work}}  
+
+\lipsum[1-3]
+
+% Outline the timeline of your thesis here. For each month that 
+% you are planning to write your thesis, describe milestones that 
+% you plan to achieve in this month.
+\section*{\textcolor{rwth-blue}{Timeline}}
+\begin{description}[leftmargin=8em,style=multiline]
+\item[September 2023]  
+	\lipsum[1-1][1-2]
+\item[October 2023]
+	\lipsum[1-1][1-2]
+\item[November 2023]
+	\lipsum[1-1][1-2]
+\item[December 2023]
+	\lipsum[1-1][1-2]
+\item[January 2024] 
+	\lipsum[1-1][1-2]
+\item[February 2024] 
+	\lipsum[1-1][1-2]
+
+\end{description}
+
+\section*{\textcolor{rwth-blue}{References}}
+
+\printbibliography[heading=none]
+
+\end{document}
